@@ -1,4 +1,7 @@
-﻿# Haptic Master - Wear OS 2 Custom Vibration Controller
+# Haptic Master - Wear OS 2 Custom Vibration Controller
+
+[![GitHub Release](https://img.shields.io/github/v/release/quyetbkhoa/CustomVibrationForWearOS2?style=flat-square&color=blue)](https://github.com/quyetbkhoa/CustomVibrationForWearOS2/releases/latest)
+[![Download APK](https://img.shields.io/badge/Download-HapticMaster--v1.0.0.apk-brightgreen?style=flat-square&logo=android)](https://github.com/quyetbkhoa/CustomVibrationForWearOS2/releases/download/v1.0.0/HapticMaster-v1.0.0.apk)
 
 Ứng dụng tùy chỉnh độ rung xúc giác (Haptic Feedback) và mẫu rung thông báo đa dạng dành riêng cho các thiết bị chạy **Wear OS 2** (Android 8.0/9.0 Ore/Pie), tối ưu đặc biệt cho **OPPO Watch 46mm / 41mm**.
 
