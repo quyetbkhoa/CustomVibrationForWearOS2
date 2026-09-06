@@ -1,4 +1,4 @@
-﻿# Haptic Master - Wear OS 2
+# Haptic Master - Wear OS 2
 
 [![GitHub Release](https://img.shields.io/github/v/release/quyetbkhoa/CustomVibrationForWearOS2?style=flat-square&color=blue)](https://github.com/quyetbkhoa/CustomVibrationForWearOS2/releases/latest)
 [![Download APK](https://img.shields.io/badge/Download-HapticMaster--v1.0.0.apk-brightgreen?style=flat-square&logo=android)](https://github.com/quyetbkhoa/CustomVibrationForWearOS2/releases/download/v1.0.0/HapticMaster-v1.0.0.apk)
@@ -16,10 +16,10 @@ A custom vibration and haptic feedback controller designed for **Wear OS 2** (An
 - **System Intensity Tuning**: Adjust OS-level haptics (Subtle / Medium / Ultra).
 - **Custom Patterns**: Distinct vibration patterns for notifications (Heartbeat, Buzz Sharp, Long Pulse, SOS, Triple Kick).
 - **AMOLED-Optimized UI**: Pure black tactile UI with instant haptic preview.
-- **Background Persistence**: Runs reliably via NotificationListenerService and battery whitelist.
+- **Background Persistence**: Runs reliably via `NotificationListenerService` and battery whitelist.
 
 ### ⚡ Quick Setup (ADB)
-`ash
+```bash
 # 1. Install APK
 adb install -r HapticMaster-v1.0.0.apk
 
@@ -31,13 +31,13 @@ adb shell cmd notification allow_listener com.oppowatch.haptics/.service.HapticN
 
 # 4. Whitelist from battery optimization
 adb shell dumpsys deviceidle whitelist +com.oppowatch.haptics
-`
-*(Windows users can also run install_and_grant_permissions.bat)*
+```
+*(Windows users can also run `install_and_grant_permissions.bat`)*
 
 ### 🛠️ Build
-`ash
+```bash
 ./gradlew assembleDebug
-`
+```
 
 ---
 
@@ -49,10 +49,10 @@ adb shell dumpsys deviceidle whitelist +com.oppowatch.haptics
 - **Chỉnh cường độ hệ thống**: Can thiệp độ rung toàn hệ thống (Nhẹ / Vừa / Cực mạnh).
 - **Mẫu rung đa dạng**: Tùy chọn kiểu rung khi có thông báo (Heartbeat, Buzz Sharp, Long Pulse, SOS, Triple Kick).
 - **Giao diện tối ưu AMOLED**: Nền đen tiết kiệm pin kèm phản hồi rung tức thì khi bấm.
-- **Chạy nền bền bỉ**: Sử dụng NotificationListenerService và loại trừ tối ưu hóa pin.
+- **Chạy nền bền bỉ**: Sử dụng `NotificationListenerService` và loại trừ tối ưu hóa pin.
 
 ### ⚡ Cài đặt nhanh (ADB)
-`ash
+```bash
 # 1. Cài đặt APK
 adb install -r HapticMaster-v1.0.0.apk
 
@@ -64,15 +64,15 @@ adb shell cmd notification allow_listener com.oppowatch.haptics/.service.HapticN
 
 # 4. Bỏ qua chế độ tiết kiệm pin (Doze)
 adb shell dumpsys deviceidle whitelist +com.oppowatch.haptics
-`
-*(Người dùng Windows có thể chạy trực tiếp file install_and_grant_permissions.bat)*
+```
+*(Người dùng Windows có thể chạy trực tiếp file `install_and_grant_permissions.bat`)*
 
 ### 🛠️ Build mã nguồn
-`ash
+```bash
 ./gradlew assembleDebug
-`
+```
 
 ---
 
 ## License
-MIT License © 2026
+MIT License (c) 2026
