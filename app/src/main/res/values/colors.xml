@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg_panel_dark">#0C0D10</color>
+    <color name="bg_panel_plate">#181A20</color>
+    <color name="metal_border_light">#3A3F4D</color>
+    <color name="metal_border_dark">#121317</color>
+    <color name="text_gold">#D4AF37</color>
+    <color name="text_silver">#E2E8F0</color>
+    <color name="text_muted">#718096</color>
+    <color name="led_green_on">#00E676</color>
+    <color name="led_green_off">#122B18</color>
+    <color name="led_red_on">#FF1744</color>
+    <color name="led_cyan_on">#00E5FF</color>
+    <color name="led_amber_on">#FFB300</color>
+    <color name="btn_test_top">#C0392B</color>
+    <color name="btn_test_bottom">#78281F</color>
+</resources>

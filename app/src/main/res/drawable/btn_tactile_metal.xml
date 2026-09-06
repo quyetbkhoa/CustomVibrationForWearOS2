@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Skeuomorphic Raised Brushed Metal Button -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Pressed state: Depressed into panel -->
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="10dp" />
+                    <solid android:color="#07080A" />
+                </shape>
+            </item>
+            <item android:top="2dp" android:left="2dp" android:bottom="1dp" android:right="1dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="9dp" />
+                    <gradient
+                        android:type="linear"
+                        android:angle="270"
+                        android:startColor="#1A1D24"
+                        android:endColor="#2B303C" />
+                    <stroke android:width="1dp" android:color="#0F1115" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <!-- Selected state: Active illuminated button -->
+    <item android:state_selected="true">
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="10dp" />
+                    <solid android:color="#FFB300" />
+                </shape>
+            </item>
+            <item android:top="1dp" android:left="1dp" android:bottom="2dp" android:right="1dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="9dp" />
+                    <gradient
+                        android:type="linear"
+                        android:angle="90"
+                        android:startColor="#252A36"
+                        android:centerColor="#3A4152"
+                        android:endColor="#4D566B" />
+                    <stroke android:width="1.5dp" android:color="#FFB300" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <!-- Normal state: Raised 3D tactile button -->
+    <item>
+        <layer-list>
+            <!-- Drop shadow -->
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="10dp" />
+                    <solid android:color="#050608" />
+                </shape>
+            </item>
+            <!-- Top specular rim -->
+            <item android:bottom="2dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="10dp" />
+                    <solid android:color="#5A6375" />
+                </shape>
+            </item>
+            <!-- Button body: Brushed titanium gradient -->
+            <item android:top="1dp" android:left="1dp" android:right="1dp" android:bottom="3dp">
+                <shape android:shape="rectangle">
+                    <corners android:radius="9dp" />
+                    <gradient
+                        android:type="linear"
+                        android:angle="270"
+                        android:startColor="#3C4352"
+                        android:centerColor="#2A2F3B"
+                        android:endColor="#1E222A" />
+                    <stroke android:width="1dp" android:color="#4F5768" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

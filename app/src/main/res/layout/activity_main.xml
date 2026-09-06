@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0B0E"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingLeft="22dp"
+        android:paddingRight="22dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="36dp">
+
+        <!-- Skeuomorphic Top Embellishment Plate -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HAPTIC MASTER"
+            android:textColor="#D4AF37"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.12"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="4" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OPPO WATCH 46MM"
+            android:textColor="#718096"
+            android:textSize="9sp"
+            android:letterSpacing="0.18"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="14dp" />
+
+        <!-- SECTION 1: SYSTEM INTENSITY (SKEUOMORPHIC CAVITY) -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_debossed_panel"
+            android:padding="10dp"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SYSTEM INTENSITY"
+                android:textColor="#A0AEC0"
+                android:textSize="10sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.1"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <!-- Level 1 -->
+                <Button
+                    android:id="@+id/btn_level_1"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="4dp"
+                    android:text="1 SOFT"
+                    android:textColor="#E2E8F0"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/btn_tactile_metal" />
+
+                <!-- Level 2 -->
+                <Button
+                    android:id="@+id/btn_level_2"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="4dp"
+                    android:text="2 MED"
+                    android:textColor="#E2E8F0"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/btn_tactile_metal" />
+
+                <!-- Level 3 -->
+                <Button
+                    android:id="@+id/btn_level_3"
+                    android:layout_width="0dp"
+                    android:layout_height="38dp"
+                    android:layout_weight="1"
+                    android:text="3 MAX"
+                    android:textColor="#E2E8F0"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/btn_tactile_metal" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_intensity_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Active Level: 3 (MAX)"
+                android:textColor="#00E676"
+                android:textSize="9sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp" />
+        </LinearLayout>
+
+        <!-- SECTION 2: FEEL THE WEAR ENGINE -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_debossed_panel"
+            android:padding="10dp"
+            android:layout_marginBottom="14dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="FEEL THE WEAR"
+                    android:textColor="#A0AEC0"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:letterSpacing="0.08" />
+
+                <Button
+                    android:id="@+id/btn_engine_toggle"
+                    android:layout_width="74dp"
+                    android:layout_height="30dp"
+                    android:text="ENABLED"
+                    android:textColor="#00E676"
+                    android:textSize="9sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/btn_tactile_metal" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HAPTIC PATTERNS:"
+                android:textColor="#718096"
+                android:textSize="9sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="6dp" />
+
+            <!-- Pattern Buttons (2x2 Grid) -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginBottom="4dp">
+
+                <Button
+                    android:id="@+id/btn_pat_long"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="4dp"
+                    android:text="LONG 1.2s"
+                    android:textColor="#E2E8F0"
+                    android:textSize="9sp"
+                    android:background="@drawable/btn_tactile_metal" />
+
+                <Button
+                    android:id="@+id/btn_pat_double"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:text="DOUBLE"
+                    android:textColor="#E2E8F0"
+                    android:textSize="9sp"
+                    android:background="@drawable/btn_tactile_metal" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/btn_pat_staccato"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="4dp"
+                    android:text="STACCATO"
+                    android:textColor="#E2E8F0"
+                    android:textSize="9sp"
+                    android:background="@drawable/btn_tactile_metal" />
+
+                <Button
+                    android:id="@+id/btn_pat_heartbeat"
+                    android:layout_width="0dp"
+                    android:layout_height="36dp"
+                    android:layout_weight="1"
+                    android:text="HEARTBEAT"
+                    android:textColor="#E2E8F0"
+                    android:textSize="9sp"
+                    android:background="@drawable/btn_tactile_metal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- SECTION 3: SKEUOMORPHIC TEST PLUNGER BUTTON -->
+        <Button
+            android:id="@+id/btn_test_vibration"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:text="⚡ TEST HAPTICS"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.08"
+            android:background="@drawable/btn_test_plunger"
+            android:shadowColor="#000000"
+            android:shadowDx="0"
+            android:shadowDy="2"
+            android:shadowRadius="4" />
+
+    </LinearLayout>
+</ScrollView>

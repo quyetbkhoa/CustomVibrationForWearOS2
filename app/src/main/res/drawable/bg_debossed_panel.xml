@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- 3D Sunken / Debossed Panel with Inner Shadow Simulation -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Outer rim highlight (bottom/right light bounce) -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="14dp" />
+            <solid android:color="#2A2F3D" />
+        </shape>
+    </item>
+    <!-- Dark deep cut shadow (top/left) -->
+    <item android:bottom="1dp" android:right="1dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="14dp" />
+            <solid android:color="#07080A" />
+        </shape>
+    </item>
+    <!-- Sunken metallic cavity -->
+    <item android:top="2dp" android:left="2dp" android:bottom="1dp" android:right="1dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="13dp" />
+            <gradient
+                android:type="linear"
+                android:angle="270"
+                android:startColor="#111317"
+                android:centerColor="#15181E"
+                android:endColor="#1C2028" />
+            <stroke android:width="1dp" android:color="#0B0C0E" />
+        </shape>
+    </item>
+</layer-list>
